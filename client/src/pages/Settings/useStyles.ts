@@ -9,11 +9,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   tabs: {
     backgroundColor: theme.palette.background.paper,
-    maxWidth: '100vw',
     width: '20vw',
-    [theme.breakpoints.down('sm')]: {
-      width: '35vw',
-    },
+    minWidth: '150px',
     height: '100%',
     borderRight: `1px solid ${theme.palette.divider}`,
     boxShadow: '3px 0 5px -2px #DDDDDD',
@@ -25,6 +22,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   label: {
     fontSize: '14px',
+    left: '20%',
   },
   profileWrapper: {
     [theme.breakpoints.down('sm')]: {
@@ -40,6 +38,10 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   tabPanel: {
     width: '80%',
+  },
+  indicator: {
+    left: '10%',
+    transform: 'rotate(90deg)',
   },
 }));
 

@@ -106,6 +106,9 @@ export default function Settings(): JSX.Element {
                 marginTop: 15,
               },
             }}
+            classes={{
+              indicator: classes.indicator,
+            }}
             onChange={handleChange}
             className={classes.tabs}
           >
