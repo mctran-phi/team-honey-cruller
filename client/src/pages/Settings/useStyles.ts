@@ -6,11 +6,20 @@ const useStyles = makeStyles((theme: Theme) => ({
     justifyContent: 'center',
     flexGrow: 1,
     overflow: 'hidden',
+    [theme.breakpoints.down('xs')]: {
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
   },
   tabs: {
     backgroundColor: theme.palette.background.paper,
-    width: '20vw',
-    minWidth: '150px',
+    // width: '20vw',
+    // minWidth: '150px',
+    maxWidth: '100vw',
+    width: '30vw',
+    [theme.breakpoints.down('xs')]: {
+      width: '50vw',
+    },
     height: '100%',
     borderRight: `1px solid ${theme.palette.divider}`,
     boxShadow: '3px 0 5px -2px #DDDDDD',
@@ -24,24 +33,37 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontSize: '14px',
     left: '20%',
   },
-  profileWrapper: {
-    [theme.breakpoints.down('sm')]: {
-      width: '55vw',
-    },
+  indicator: {
+    left: '10%',
+    transform: 'rotate(90deg)',
   },
   paymentDetails: {
     fontSize: '35px',
     fontWeight: 'bold',
     textAlign: 'center',
     padding: '20px 0 30px 0',
-    marginLeft: '58px',
   },
   tabPanel: {
     width: '80%',
   },
-  indicator: {
-    left: '10%',
-    transform: 'rotate(90deg)',
+  // indicator: {
+  //   left: '10%',
+  //   transform: 'rotate(90deg)',
+  // },
+  drawer: {
+    width: '50vw',
+  },
+  expandBtn: {
+    '&:hover': {
+      backgroundColor: 'white',
+      color: 'black',
+      border: '1px solid black',
+    },
+    width: '80vw',
+    height: 40,
+    borderRadius: 0,
+    margin: '5px 0',
+    border: '1px solid white',
   },
 }));
 
