@@ -13,10 +13,9 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   tabs: {
     backgroundColor: theme.palette.background.paper,
-    // width: '20vw',
-    // minWidth: '150px',
+    width: '20vw',
+    minWidth: '150px',
     maxWidth: '100vw',
-    width: '30vw',
     [theme.breakpoints.down('xs')]: {
       width: '50vw',
     },
@@ -46,10 +45,6 @@ const useStyles = makeStyles((theme: Theme) => ({
   tabPanel: {
     width: '80%',
   },
-  // indicator: {
-  //   left: '10%',
-  //   transform: 'rotate(90deg)',
-  // },
   drawer: {
     width: '50vw',
   },
